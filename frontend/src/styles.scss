@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// Include the common styles for Angular Material
+@include mat.core();
+
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Basic Material Design color palette
+:root {
+  --primary-color: #1976d2;
+  --accent-color: #e91e63;
+  --warn-color: #f44336;
+  --background-color: #fafafa;
+  --text-color: rgba(0, 0, 0, 0.87);
+}
+
+// Apply custom colors to Material components
+.mat-toolbar.mat-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.mat-raised-button.mat-primary {
+  background: var(--primary-color);
+  color: white;
+}
